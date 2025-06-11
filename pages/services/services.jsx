@@ -4,6 +4,8 @@ import YouthGroup from "./servicesInfo/youth-group"; // Import the YouthGroup co
 import ConnectGroups from "./servicesInfo/connect-groups"; // Import the ConnectGroups component
 import SundayWorship from "./servicesInfo/sunday-worship"; // Import the SundayWorship component
 import ChildCare from "./servicesInfo/child-care";
+import Music from "./servicesInfo/music-ministry";
+import CommunityOutreach from "./servicesInfo/community-outreach";
 import styles from "./services.module.css"; // Import the CSS Module
 
 function Services() {
@@ -33,12 +35,54 @@ function Services() {
   }, [isPopupOpen]);
 
   const services = [
-    { id: 1, title: "Sunday Worship", image: "/images/SundayWorship/sunday-worship-2.jpg", description: "Join us every Sunday for a time of worship, prayer, and teaching.", isNew: true },
-    { id: 2, title: "Connect Groups", image: "/images/ConnectGroups/connect-group-1.jpg", description: "Dive deeper into God's Word with our weekly Bible Study sessions.", isNew: true },
-    { id: 3, title: "Youth Group", image: "/images/YouthGroup/youth-group-1.jpg", description: "Our Youth Group is a vibrant community where teens can grow in their faith.", isNew: true },
-    { id: 4, title: "Community Outreach", image: "/images/services-communityOutreach.png", description: "Our Community Outreach programs are designed to make a positive impact.", isNew: false },
-    { id: 5, title: "Child Care", image: "/images/services-childcare.jpg", description: "Our Child Care services provide a safe, nurturing, and fun environment.", isNew: true },
-    { id: 6, title: "Music Ministry", image: "/images/services-musicMinistery.png", description: "Our Music Ministry is dedicated to leading the congregation in worship.", isNew: false },
+    {
+      id: 1,
+      title: "Sunday Worship",
+      image: "/images/SundayWorship/sunday-worship-2.jpg",
+      description:
+        "Join us every Sunday for a time of worship, prayer, and teaching.",
+      isNew: false,
+    },
+    {
+      id: 2,
+      title: "Connect Groups",
+      image: "/images/ConnectGroups/connect-group-1.jpg",
+      description:
+        "Dive deeper into God's Word with our weekly Bible Study sessions.",
+      isNew: false,
+    },
+    {
+      id: 3,
+      title: "Youth Group",
+      image: "/images/YouthGroup/youth-group-1.jpg",
+      description:
+        "Our Youth Group is a vibrant community where teens can grow in their faith.",
+      isNew: false,
+    },
+    {
+      id: 4,
+      title: "Community Outreach",
+      image: "/images/services-outreach.jpg",
+      description:
+        "Our Community Outreach programs are designed to make a positive impact.",
+      isNew: false,
+    },
+    {
+      id: 5,
+      title: "Child Care",
+      image: "/images/services-childcare.jpg",
+      description:
+        "Our Child Care services provide a safe, nurturing, and fun environment.",
+      isNew: false,
+    },
+    {
+      id: 6,
+      title: "Music Ministry",
+      image: "/images/services-musicMinistery.png",
+      description:
+        "Our Music Ministry is dedicated to leading the congregation in worship.",
+      isNew: false,
+    },
   ];
 
   const handleServiceClick = (service) => {
@@ -88,15 +132,19 @@ function Services() {
               &times;
             </button>
             {/* Render the appropriate component based on the selected service */}
-            {   selectedService.title === "Youth Group" ? (
+            {selectedService.title === "Youth Group" ? (
               <YouthGroup onClose={closePopup} />
             ) : selectedService.title === "Connect Groups" ? (
               <ConnectGroups onClose={closePopup} />
             ) : selectedService.title === "Sunday Worship" ? (
               <SundayWorship onClose={closePopup} />
             ) : selectedService.title === "Child Care" ? (
-              <ChildCare onClose={closePopup} /> 
-            ):(
+              <ChildCare onClose={closePopup} />
+            ) : selectedService.title === "Music Ministry" ? (
+              <Music onClose={closePopup} />
+              ) : selectedService.title === "Community Outreach" ? (
+              <CommunityOutreach onClose={closePopup} />
+            ) : (
               <>
                 <h2>{selectedService.title}</h2>
                 <img

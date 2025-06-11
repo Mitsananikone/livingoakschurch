@@ -1,106 +1,83 @@
-import React from "react";
-import { useRouter } from "next/router"; // Import useRouter
+import React, { useState, useRef } from "react";
+import { useRouter } from "next/router";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import styles from "./servicesInfo.module.css";
 
-function CommunityOutreach() {
-  const router = useRouter(); // Initialize the router
+function CommunityOutreach({ onClose }) {
+  const router = useRouter();
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const sliderRef = useRef(null);
 
-  const styles = {
-    centerContainer: {
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      backgroundColor: "var(--background-color)",
-      padding: "20px",
-      overflow: "visible",
-      maxWidth: "100vw",
-      marginTop: "8vh",
-    },
-    title: {
-      fontSize: "1.5rem",
-      color: "var(--primary-color)",
-      textAlign: "center",
-      marginBottom: "20px",
-    },
-    imageContainer: {
-      width: "100%",
-      height: "200px",
-      borderRadius: "10px",
-      overflow: "hidden",
-      marginBottom: "20px",
-      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
-    },
-    serviceImage: {
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
-    },
-    description: {
-      fontSize: "1rem",
-      lineHeight: "1.6",
-      color: "var(--primary-color)",
-      textAlign: "left",
-      padding: "0 20px",
-      "@media (maxWidth: 768px)": {
-        padding: "0 10px",
-      },
-    },
-    backButton: {
-      marginTop: "20px",
-      padding: "10px 20px",
-      fontSize: "1rem",
-      color: "white",
-      backgroundColor: "var(--primary-color)",
-      border: "none",
-      borderRadius: "5px",
-      cursor: "pointer",
-      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
-      ":hover": {
-        backgroundColor: "var(--secondary-color)",
-      },
-    },
+  // Carousel settings
+  const carouselSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    beforeChange: (current, next) => setCurrentSlide(next),
   };
 
-  // Function to handle the back button click
-  const handleBackClick = () => {
-    // Navigate to the root with a query parameter
-    router.push("/?scrollTo=services");
+  // Array of image URLs for the carousel
+  const carouselImages = [
+    "/images/Outreach/outreach-1.jpg",
+    "/images/Outreach/outreach-2.jpg",
+    "/images/Outreach/outreach-3.jpg",
+  ];
+
+  // Function to handle thumbnail click
+  const handleThumbnailClick = (index) => {
+    setCurrentSlide(index);
+    sliderRef.current.slickGoTo(index);
   };
 
   return (
-    <div style={styles.centerContainer}>
+    <div className={styles.centerContainer}>
       {/* Header */}
-      <h2 style={styles.title}>
-        <i className="fa-solid fa-hands-helping" aria-hidden="true"></i> Community Outreach
+      <h2 className={styles.title}>
+        <i className="fa-solid fa-hands-helping" aria-hidden="true"></i> Outreach
       </h2>
 
-      {/* Image */}
-      <div style={styles.imageContainer}>
-        <img
-          src="/images/services-communityOutreach.png"
-          alt="Community Outreach"
-          style={styles.serviceImage}
-        />
+      {/* Carousel */}
+      <div className={styles.carouselContainer}>
+        <Slider {...carouselSettings} ref={sliderRef} initialSlide={currentSlide}>
+          {carouselImages.map((image, index) => (
+            <div key={index}>
+              <img
+                src={image}
+                alt={`Outreach Image ${index + 1}`}
+                className={styles.carouselImage}
+              />
+            </div>
+          ))}
+        </Slider>
       </div>
 
-      {/* Description */}
-      <div style={styles.description}>
-        <p>
-          Our Community Outreach programs are designed to make a positive impact
-          in Alvin and beyond. From food drives to volunteer projects, we're
-          committed to serving those in need and sharing the love of Jesus in
-          practical ways.
-        </p>
-        <p>
-          Join us as we work together to make a difference in our community.
-          Everyone is welcome to participate, and no act of kindness is too small!
-        </p>
+      {/* Thumbnails */}
+      <div className={styles.thumbnailContainer}>
+        {carouselImages.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Thumbnail ${index + 1}`}
+            className={`${styles.thumbnail} ${
+              index === currentSlide ? styles.activeThumbnail : ""
+            }`}
+            onClick={() => handleThumbnailClick(index)}
+          />
+        ))}
       </div>
 
-      {/* Back Button */}
-      <button style={styles.backButton} onClick={handleBackClick}>
-        BACK
-      </button>
+      {/* Single Description Section */}
+      <div className={styles.description}>
+        <p>
+          Our Outreach Ministry brings God's love beyond our church walls through service and evangelism in our community. We partner with local organizations, host neighborhood events, and support those in need - all while sharing the hope of Christ. Whether through food drives, giving out water/sportsdrinks, or street evangelism, we're committed to being the hands and feet of Jesus to those around us. Everyone is invited to join us in serving and spreading the Gospel message.
+        </p>
+      </div>
     </div>
   );
 }

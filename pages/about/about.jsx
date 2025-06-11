@@ -21,19 +21,12 @@ function About() {
         {/* First Parallelogram */}
         <div className={styles.parallelogramWrapper}>
           <Parallelogram
-            width="80vw" // Default width
+            width="70vw" // Default width
             height="40vh" // Height of the parallelogram
             color="var(--secondary-color)"
             top="-2vh"
             zIndex="-2"
           >
-             {/* <Parallelogram
-            width="600px" // Default width
-            height="350px" // Height of the parallelogram
-            color="var(--secondary-color)"
-            top="-2vh"
-            zIndex="-2"
-          ></Parallelogram> */}
             <div className={styles.parallelogramContent}>
               <p>
                 The city of Alvin is known for its Southern Oak Trees. The

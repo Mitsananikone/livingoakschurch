@@ -118,6 +118,71 @@ function SundayWorship({ onClose }) {
           >
             Sermon Season 1, Ep 3
           </a>
+
+           <br />
+          <a
+            href="https://www.youtube.com/watch?v=z1rOaU09DIY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sermon Season 1, Ep 4
+          </a>
+          <br />
+          <a
+            href="https://www.youtube.com/watch?v=rzLUHTwQqZc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sermon Season 1, Ep 5
+          </a>
+          <br />
+          <a
+            href="https://www.youtube.com/watch?v=QpGw0HDOefM"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sermon Season 1, Ep 6
+          </a>
+<br />
+          <a
+            href="https://www.youtube.com/watch?v=91t5B_ZEMV0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sermon Season 1, Ep 7
+          </a>
+          <br />
+          <a
+            href="https://www.youtube.com/watch?v=6EzIBJ-9SkQ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sermon Season 1, Ep 8
+          </a>
+          <br />
+          <a
+            href="https://www.youtube.com/watch?v=81DbWSsH5ro"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sermon Season 1, Ep 9
+          </a>
+          <br />
+          <a
+            href="https://www.youtube.com/watch?v=1NyE3in_RVA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sermon Season 1, Ep 10
+          </a>
+           <br />
+          <a
+            href="https://www.youtube.com/watch?v=rDE_h5wJy24"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sermon Season 1, Ep 11
+          </a>
         </p>
       </div>
     </div>

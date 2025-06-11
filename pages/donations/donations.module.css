@@ -125,7 +125,8 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    width: 100%;
+    width: auto; /* Change from 100% to auto */
+    max-width: 100%; /* Ensure it doesn't overflow on small screens */
   }
   
   .qrCode {
@@ -189,6 +190,7 @@
     
     .qrContainer {
       padding: 0.75rem;
+      width: auto; /* Ensure it stays auto on mobile */
     }
     
     .qrCode {

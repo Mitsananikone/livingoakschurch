@@ -27,11 +27,11 @@ const Footer = () => {
             </li>
             <li>
               <FaPhone className={styles.icon} />
-              <span>(000) 000-0000</span>
+              <span>(832) 696-9805</span>
             </li>
             <li>
               <FaEnvelope className={styles.icon} />
-              <span>Cary's Email Address</span>
+              <span>Caryperrin@yahoo.com</span>
             </li>
           </ul>
           <div className={styles.socialIcons}>
@@ -76,7 +76,7 @@ const Footer = () => {
               <a href="#about">Name & Logo Story</a>
             </li>
             <li>
-              <a href="#donations">Donations</a>
+              <a href="#donations">Tithing</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
@@ -98,7 +98,7 @@ const Footer = () => {
             </li>
             <li>
               <span className={styles.serviceName}>Connect Groups:</span>{" "}
-              Thursday 6:30 PM
+              Thursday 7:00 PM
             </li>
           </ul>
         </div>

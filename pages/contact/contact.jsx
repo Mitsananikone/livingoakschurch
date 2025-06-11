@@ -49,56 +49,7 @@ function Contact() {
 
   return (
     <div className={styles.contactContainer}>
-      {/* Social Media Box (commented out) */}
-      {/* <div className={styles.socialMediaBox}>
-        <h2 className={styles.socialMediaTitle}>Follow us on <br />social media!</h2>
-        <div className={styles.socialMediaIcons}>
-          {isClient && (
-            <>
-              <div
-                className={styles.icon}
-                onClick={() => window.open("https://www.facebook.com/profile.php?id=61565398850141", "_blank")}
-              >
-                <img
-                  src="/images/facebook-icon.png"
-                  alt="Facebook"
-                  className={styles.logoImage}
-                />
-              </div>
-              <div
-                className={styles.icon}
-                onClick={() => window.open("https://instagram.com", "_blank")}
-              >
-                <img
-                  src="/images/instagram-icon.png"
-                  alt="Instagram"
-                  className={styles.logoImage}
-                />
-              </div>
-              <div
-                className={styles.icon}
-                onClick={() => window.open("https://twitter.com", "_blank")}
-              >
-                <img
-                  src="/images/x-icon.png"
-                  alt="Twitter"
-                  className={styles.logoImage}
-                />
-              </div>
-              <div
-                className={styles.icon}
-                onClick={() => window.open("https://snapchat.com", "_blank")}
-              >
-                <img
-                  src="/images/snapchat-icon.png"
-                  alt="Snapchat"
-                  className={styles.logoImage}
-                />
-              </div>
-            </>
-          )}
-        </div>
-      </div> */}
+     
 
       {/* Form Wrapper */}
       <div className={styles.formWrapper}>

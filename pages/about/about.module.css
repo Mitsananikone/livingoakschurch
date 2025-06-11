@@ -64,6 +64,8 @@
   margin-bottom: -10vh; /* Space between the two parallelograms */
 }
 
+
+
 /* Parallelogram Content */
 .parallelogramContent {
   position: relative;
@@ -81,11 +83,11 @@
 /* Responsive Adjustments */
 @media (max-width: 480px) {
   .parallelogramWrapper {
-    width: 150%; /* Make the parallelogram 200% wider on small screens */
+    width: 100%; /* Make the parallelogram 200% wider on small screens */
   }
 
   .parallelogramContent {
-    font-size: 0.55rem; /* Smaller font size for mobile */
+    font-size: x-small; /* Smaller font size for mobile */
     padding: 20px; /* Adjust padding for smaller screens */
   }
 }
@@ -96,7 +98,7 @@
   }
 
   .parallelogramContent {
-    font-size: medium; /* Medium font size for tablets */
+    font-size: small; /* Medium font size for tablets */
     padding: 25px; /* Adjust padding for tablets */
   }
 }
@@ -107,7 +109,7 @@
   }
 
   .parallelogramContent {
-    font-size: large; /* Larger font size for small desktops */
+    font-size: x-large; /* Larger font size for small desktops */
     padding: 30px; /* Adjust padding for small desktops */
   }
 }
