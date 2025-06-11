@@ -128,7 +128,7 @@ function MeetPerrins() {
         <div style={styles.contentSection}>
           {/* Family Portrait */}
           <img
-            src="/images/Fperrin.png"
+            src="/images/Fperrin.jpg"
             alt="Family Perrin"
             style={{ ...styles.profileImageSquare, ...styles.borderedImage }}
           />

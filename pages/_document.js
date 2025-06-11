@@ -12,6 +12,12 @@ export default function Document() {
         ></script>
 
         {/* Keywords */}
+
+        <title>Living Oaks Church | Alvin, TX</title>
+        <meta
+          name="description"
+          content="Welcome to Living Oaks Church in Alvin, Texas. Join us for worship and community events."
+        ></meta>
         <meta
           name="keywords"
           content="church, Jesus, Bible, worship, Sunday service, small groups, Alvin, Texas, Living Oaks Church, community, faith, hope, love, hurting, healing, family, children, youth, adults, seniors, outreach, service, prayer, fellowship"
@@ -34,6 +40,7 @@ export default function Document() {
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://livingoaksalvin.com" />
       </Head>
       <body>
         <Main />
