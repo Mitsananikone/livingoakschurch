@@ -44,7 +44,7 @@ function HomePage() {
              "1rem"
   },
   subtitle: {
-    fontSize: screenWidth < 480 ? "1.3rem" :
+    fontSize: screenWidth < 480 ? "1.5rem" :
               screenWidth < 768 ? "1.2rem" :
               screenWidth < 1024 ? "1.1rem" :
               "1rem"
