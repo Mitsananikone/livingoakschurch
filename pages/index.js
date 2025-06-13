@@ -13,7 +13,7 @@ import ScreenWidthDisplay from "@/components/screenWidthDisplay/ScreenWidthDispl
 
 const styles = {
   centerContainer: {
-    marginTop: "3vh",
+    marginTop: "4vh",
     display: "flex",
     flexDirection: "column", // Stack children vertically
     justifyContent: "center",
