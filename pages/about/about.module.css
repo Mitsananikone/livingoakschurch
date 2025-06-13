@@ -98,7 +98,7 @@
   }
 
   .parallelogramContent {
-    font-size: small; /* Medium font size for tablets */
+    font-size: x-small; /* Medium font size for tablets */
     padding: 25px; /* Adjust padding for tablets */
   }
 }
