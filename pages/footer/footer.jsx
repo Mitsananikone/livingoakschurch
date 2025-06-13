@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./footer.module.css";
 import {
   FaFacebook,
+  FaYoutube,
   FaInstagram,
   FaSnapchatGhost,
   FaEnvelope,
@@ -41,8 +42,8 @@ const Footer = () => {
             >
               <FaFacebook />
             </a>
-            <a href="https://instagram.com" aria-label="Instagram">
-              <FaInstagram />
+            <a href="https://www.youtube.com/@LivingOaksChurch-AlvinTX" aria-label="Youtube">
+              <FaYoutube />
             </a>
             <a href="https://x.com" aria-label="X (formerly Twitter)">
               <FaXTwitter />
