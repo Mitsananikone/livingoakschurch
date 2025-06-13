@@ -83,11 +83,11 @@
 /* Responsive Adjustments */
 @media (max-width: 480px) {
   .parallelogramWrapper {
-    width: 100%; /* Make the parallelogram 200% wider on small screens */
+    width: 150%; /* Make the parallelogram 200% wider on small screens */
   }
 
   .parallelogramContent {
-    font-size: x-small; /* Smaller font size for mobile */
+    font-size: xx-small; /* Smaller font size for mobile */
     padding: 20px; /* Adjust padding for smaller screens */
   }
 }
