@@ -82,7 +82,7 @@ function HomePage() {
                 &nbsp; OAKS  
              
                 &nbsp; CHURCH  
-                 &nbsp; 
+    
               </h1>
               <h5 style={{ color: "white" }}>
                 
@@ -93,7 +93,7 @@ function HomePage() {
               </h5>
               <div className={styles.separationLine}></div>
               <h4 className={styles.subtitle}>
-                <br/>
+        
                 <br/>
                 Leading REAL people <br /> with REAL hurts to find REAL hope in
                 Jesus.
