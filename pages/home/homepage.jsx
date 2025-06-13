@@ -82,6 +82,7 @@ function HomePage() {
                 &nbsp; OAKS  
              
                 &nbsp; CHURCH  
+                 &nbsp; 
               </h1>
               <h5 style={{ color: "white" }}>
                 
