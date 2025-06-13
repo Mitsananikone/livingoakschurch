@@ -94,7 +94,7 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
   .parallelogramWrapper {
-    width: 170%; /* Make the parallelogram 150% wider on tablets */
+    width: 200%; /* Make the parallelogram 150% wider on tablets */
   }
 
   .parallelogramContent {
