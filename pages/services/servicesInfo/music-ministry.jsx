@@ -74,6 +74,7 @@ function Music({ onClose }) {
 
       {/* Single Description Section */}
       <div className={styles.description}>
+        <br/>
         <p>
           Our Music Ministry is a dedicated team of singers and musicians who rehearse weekly to bring uplifting worship to our congregation. Whether through hymns, contemporary praise, or special performances, we strive to create a meaningful worship experience. Everyone is welcome—whether you're an experienced musician or just love to sing! Join us as we use our gifts to glorify God and inspire others through music.
         </p>
