@@ -77,11 +77,11 @@ function HomePage() {
           >
             <div className={styles.parallelogramContent}>
               <h1 className={styles.title} style={dynamicStyles.title}>
-                LIVING  &nbsp;
+                &nbsp; LIVING  
               
-                OAKS  &nbsp;
+                &nbsp; OAKS  
              
-                CHURCH  
+                &nbsp; CHURCH  
               </h1>
               <h5 style={{ color: "white" }}>
                 
