@@ -95,7 +95,7 @@ function HomePage() {
               <h4 className={styles.subtitle}>
                 <br/>
                 <br/>
-                Leading REAL people <br /> with REAL hurts to find REAL <br/> hope in
+                Leading REAL people <br /> with REAL hurts to find REAL hope in
                 Jesus.
               </h4>
             </div>
