@@ -58,7 +58,7 @@ function HomePage() {
         <div className={styles.animateLeft}>
           <Parallelogram
             width={
-              screenWidth < 480 ? "80vw" : // New breakpoint for very small screens
+              screenWidth < 480 ? "85vw" : // New breakpoint for very small screens
             screenWidth < 768 ? "70vw" : 
             screenWidth < 1024 ? "60vw" : 
             "40vw" 
