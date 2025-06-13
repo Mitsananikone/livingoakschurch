@@ -44,7 +44,7 @@ function HomePage() {
              "1rem"
   },
   subtitle: {
-    fontSize: screenWidth < 480 ? "1rem" :
+    fontSize: screenWidth < 480 ? "1.3rem" :
               screenWidth < 768 ? "1.2rem" :
               screenWidth < 1024 ? "1.1rem" :
               "1rem"
@@ -92,6 +92,7 @@ function HomePage() {
               </h5>
               <div className={styles.separationLine}></div>
               <h4 className={styles.subtitle}>
+                <br/>
                 <br/>
                 Leading REAL people <br /> with REAL hurts to find REAL hope in
                 Jesus.
