@@ -110,10 +110,10 @@ function HomePage() {
             "20vw"
           }
       
-            height= "40vh"
+            height= "45vh"
             top="8vh"
             left={
-              screenWidth < 480 ? "1vw" : // New breakpoint for very small screens
+              screenWidth < 480 ? "-1vw" : // New breakpoint for very small screens
               screenWidth < 768 ? "5vw" : 
               screenWidth < 1024 ? "-5vw" : 
               "-20vw"
