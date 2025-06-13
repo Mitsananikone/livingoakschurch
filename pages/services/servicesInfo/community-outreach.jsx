@@ -74,6 +74,7 @@ function CommunityOutreach({ onClose }) {
 
       {/* Single Description Section */}
       <div className={styles.description}>
+        <br/>
         <p>
           Our Outreach Ministry brings God's love beyond our church walls through service and evangelism in our community. We partner with local organizations, host neighborhood events, and support those in need - all while sharing the hope of Christ. Whether through food drives, giving out water/sportsdrinks, or street evangelism, we're committed to being the hands and feet of Jesus to those around us. Everyone is invited to join us in serving and spreading the Gospel message.
         </p>
