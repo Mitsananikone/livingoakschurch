@@ -32,7 +32,7 @@ function HomePage() {
       opacity: fadeInImages ? 1 : 0,
     },
     title: {
-    fontSize: screenWidth < 480 ? "2rem" :  // Extra small devices
+    fontSize: screenWidth < 480 ? "1.8rem" :  // Extra small devices
              screenWidth < 768 ? "1.7rem" :     // Small devices
              screenWidth < 1024 ? "1.6rem" : // Medium devices
              "2rem",                       // Large devices (1024px and up)
