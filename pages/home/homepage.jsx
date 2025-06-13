@@ -32,7 +32,7 @@ function HomePage() {
       opacity: fadeInImages ? 1 : 0,
     },
     title: {
-    fontSize: screenWidth < 480 ? "1.6rem" :  // Extra small devices
+    fontSize: screenWidth < 480 ? "1.8rem" :  // Extra small devices
              screenWidth < 768 ? "1.7rem" :     // Small devices
              screenWidth < 1024 ? "1.6rem" : // Medium devices
              "2rem",                       // Large devices (1024px and up)
@@ -67,7 +67,7 @@ function HomePage() {
             color="var(--primary-color)"
             top="8vh"
             left={ 
-              screenWidth < 480 ? "10vw" : // New breakpoint for very small screens
+              screenWidth < 480 ? "9vw" : // New breakpoint for very small screens
               screenWidth < 768 ? "8vw" : 
               screenWidth < 1024 ? "0vw" : 
               "-15vw"
@@ -113,7 +113,7 @@ function HomePage() {
             height= "60vh"
             top="8vh"
             left={
-              screenWidth < 480 ? "-1vw" : // New breakpoint for very small screens
+              screenWidth < 480 ? "1vw" : // New breakpoint for very small screens
               screenWidth < 768 ? "5vw" : 
               screenWidth < 1024 ? "-5vw" : 
               "-20vw"
