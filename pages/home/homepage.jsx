@@ -32,7 +32,7 @@ function HomePage() {
       opacity: fadeInImages ? 1 : 0,
     },
     title: {
-    fontSize: screenWidth < 480 ? "1.8rem" :  // Extra small devices
+    fontSize: screenWidth < 480 ? "1.6rem" :  // Extra small devices
              screenWidth < 768 ? "1.7rem" :     // Small devices
              screenWidth < 1024 ? "1.6rem" : // Medium devices
              "2rem",                       // Large devices (1024px and up)
@@ -58,7 +58,7 @@ function HomePage() {
         <div className={styles.animateLeft}>
           <Parallelogram
             width={
-              screenWidth < 480 ? "85vw" : // New breakpoint for very small screens
+              screenWidth < 480 ? "75vw" : // New breakpoint for very small screens
             screenWidth < 768 ? "70vw" : 
             screenWidth < 1024 ? "60vw" : 
             "40vw" 
