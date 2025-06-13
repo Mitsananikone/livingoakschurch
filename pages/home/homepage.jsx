@@ -92,6 +92,7 @@ function HomePage() {
               </h5>
               <div className={styles.separationLine}></div>
               <h4 className={styles.subtitle}>
+                <br/>
                 Leading REAL people <br /> with REAL hurts to find REAL hope in
                 Jesus.
               </h4>
