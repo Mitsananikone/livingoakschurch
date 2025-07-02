@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
+import DownloadBanner from '@/components/DownloadBanner/DownloadBanner';
 import HomePage from "@/pages/home/homepage";
 import MeetThePerrins from "./meetPerrins/meetPerrins";
 import Mission from "./mission/mission";
@@ -48,6 +49,7 @@ export default function Home() {
   }, [router.query]); // Run this effect when the query parameter changes
   return (
     <>
+     <DownloadBanner />
       <div className="responsive-wrapper">
         <div style={styles.centerContainer}>
           {/* HomePage Section */}

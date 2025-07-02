@@ -38,8 +38,8 @@
 
 /* Logo Image */
 .logoImage {
-  height: 60px; /* Set height */
-  width: 60px; /* Set width to match height */
+  height: 80px; /* Set height */
+  width: 80px; /* Set width to match height */
   border-radius: 50%; /* Ensure it's a circle */
   object-fit: cover; /* Maintain aspect ratio */
 }

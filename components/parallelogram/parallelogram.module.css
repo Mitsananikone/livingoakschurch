@@ -1,8 +1,49 @@
+.parallelogramContainer {
+  position: relative;
+  display: inline-block;
+}
+
 .parallelogram {
   position: relative;
   display: inline-block;
   transform: skew(-20deg);
   text-align: left;
+  overflow: hidden;
+  /* Shadow effect base */
+  box-shadow: 0 0 var(--shadow-blur, 20px) var(--shadow-color, rgba(0,0,0,0.3));
+}
+
+/* Drop shadow that follows the parallelogram shape */
+.parallelogram::after {
+  content: '';
+  position: absolute;
+  bottom: calc(-1 * var(--shadow-offset, 0px));
+  left: 0;
+  right: 0;
+  height: var(--shadow-offset, 10px);
+  background: var(--shadow-color, rgba(0,0,0,1));
+  filter: blur(var(--shadow-blur, 20px));
+  transform: skewX(20deg) scaleX(0.9);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* Glossy overlay effect */
+.glossy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.4) 0%,
+    rgba(255,255,255,0.1) 50%,
+    transparent 100%
+  );
+  z-index: 2;
+  pointer-events: none;
 }
 
 .backgroundImage {
@@ -22,6 +63,7 @@
   left: 50%;
   transform: translate(-50%, -50%) skew(20deg);
   text-align: left;
-
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
 }
-

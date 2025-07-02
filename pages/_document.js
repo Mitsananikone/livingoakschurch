@@ -13,11 +13,7 @@ export default function Document() {
 
         {/* Keywords */}
 
-        <title>Living Oaks Church | Alvin, TX</title>
-        <meta
-          name="description"
-          content="Welcome to Living Oaks Church in Alvin, Texas. Join us for worship and community events."
-        ></meta>
+        
         <meta
           name="keywords"
           content="church, Jesus, Bible, worship, Sunday service, small groups, Alvin, Texas, Living Oaks Church, community, faith, hope, love, hurting, healing, family, children, youth, adults, seniors, outreach, service, prayer, fellowship"
