@@ -77,7 +77,7 @@ function MeetPerrins() {
         <div style={styles.contentSection}>
           {/* Cary Perrin Portrait */}
           <img
-            src="/images/Cperrin.png"
+            src="/images/Cperrin.jpg"
             alt="Cary Perrin"
             style={{ ...styles.profileImage, ...styles.borderedImage }}
           />
@@ -101,7 +101,7 @@ function MeetPerrins() {
         <div style={styles.contentSection}>
           {/* Danielle Perrin Portrait */}
           <img
-            src="/images/Dperrin.png"
+            src="/images/Dperrin.jpg"
             alt="Danielle Perrin"
             style={{ ...styles.profileImage, ...styles.borderedImage }}
           />
