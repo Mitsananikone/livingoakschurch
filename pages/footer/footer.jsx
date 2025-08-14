@@ -33,7 +33,7 @@ const Footer = () => {
             </li>
             <li>
               <FaEnvelope className={styles.icon} />
-              <span>LivingOaksAlvin@gmail.com</span>
+              <span>AlvinLivingOaks@gmail.com</span>
             </li>
           </ul>
           <div className={styles.socialIcons}>
@@ -127,5 +127,6 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 export default Footer;
