@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER, // Sender address
-      to: "LivingOaksAlvin@gmail.com", // Replace with your email address
+      to: "AlvinLivingOaks@gmail.com", // Replace with your email address
       subject: `New Contact Form Submission from ${name}`,
       text: `
         Name: ${name}
@@ -44,3 +44,4 @@ export default async function handler(req, res) {
   }
 
 }
+
