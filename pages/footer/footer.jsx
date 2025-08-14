@@ -8,6 +8,7 @@ import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
+  FaTiktok,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link"; // Import Next.js Link component
@@ -32,7 +33,7 @@ const Footer = () => {
             </li>
             <li>
               <FaEnvelope className={styles.icon} />
-              <span>Caryperrin@yahoo.com</span>
+              <span>LivingOaksAlvin@gmail.com</span>
             </li>
           </ul>
           <div className={styles.socialIcons}>
@@ -45,12 +46,15 @@ const Footer = () => {
             <a href="https://www.youtube.com/@LivingOaksChurch-AlvinTX" aria-label="Youtube">
               <FaYoutube />
             </a>
-            <a href="https://x.com" aria-label="X (formerly Twitter)">
-              <FaXTwitter />
+            <a href="https://www.tiktok.com/@livingoakschurch" aria-label="Snapchat">
+              <FaTiktok />
             </a>
+            {/* <a href="https://x.com" aria-label="X (formerly Twitter)">
+              <FaXTwitter />
+            </a> 
             <a href="https://snapchat.com" aria-label="Snapchat">
               <FaSnapchatGhost />
-            </a>
+            </a>*/}
           </div>
         </div>
 
