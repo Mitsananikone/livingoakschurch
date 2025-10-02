@@ -28,7 +28,58 @@
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
 }
 
+.fireGlow {
+  color: #ff4500; /* base fiery color */
+  font-weight: bold;
+  animation: fireFlicker 1s infinite alternate;
+}
+
+@keyframes fireFlicker {
+  0% {
+    text-shadow: 
+      0 0 15px #eeff00,
+      0 0 20px #ffd700;
+  }
+  25% {
+    text-shadow: 
+
+      0 0 25px #eeff00,
+      0 0 40px #ffd700;
+  }
+  50% {
+    text-shadow: 
+      0 0 24px #eeff00,
+      0 0 35px #ffd700;
+  }
+  75% {
+    text-shadow: 
+      0 0 28px #eeff00,
+      0 0 50px #ffd700;
+  }
+  100% {
+    text-shadow: 
+      0 0 15px #eeff00,
+      0 0 20px #ffd700;
+  }
+}
+
+
+
+
 /* Hamburger Menu - Hidden by default on desktop */
+
+/* Blinking Animation */
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* Add blink class */
+.blink {
+  animation: blink 3s infinite;
+}
+
+
 .hamburger {
   display: none;
   flex-direction: column;

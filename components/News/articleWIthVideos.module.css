@@ -1,0 +1,151 @@
+.article {
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.articleDate {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.7;
+}
+
+.bannerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.paragraph {
+  margin: 1rem 0;
+}
+
+.paragraph4 {
+  margin: 1rem 0;
+}
+
+.paragraph2 {
+  font-style: italic;
+  color: var(--primary-color);
+  
+  padding: 1rem;
+  border-left: 4px solid var(--primary-color);
+  background: rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+.paragraph3 {
+  font-style: italic;
+  color: var(--primary-color);
+  
+  padding: 1rem;
+  border-left: 4px solid var(--primary-color);
+  background: rgba(0,0,0,0.05);
+  border-radius: 6px;
+}
+
+.videoWrapper {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.videoWrapper video {
+  width: 100%;
+  border-radius: 10px;
+  height: 600px;
+  max-width: 400px;
+  object-fit: cover;
+}
+
+.videoTitle {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+
+/* Scoped carousel container */
+.carouselContainer {
+  width: 100%;
+  max-width: 400px;
+  height: 40vw;       /* smaller ratio, was 58vw */
+  max-height: 235px;  /* reduce cap */
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.carouselImageWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+}
+
+.carouselImageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+
+.thumbnailContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  object-fit: cover;
+  opacity: 0.5;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.activeThumbnail {
+  opacity: 1;
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 480px) {
+  .carouselContainer {
+    height: 60vw;
+  }
+}
+
+.footer {
+  margin-bottom: 15rem;
+}

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import smoothscroll from "smoothscroll-polyfill";
 import styles from "./nav.module.css";
 
-const Navbar = () => {
+const Navbar = ({ onOpenNews }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [navbarVisible, setNavbarVisible] = useState(false);
   const [timer, setTimer] = useState(null);
@@ -59,7 +59,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${styles.navbar} ${navbarVisible ? styles.visible : styles.hidden}`}>
+    <nav
+      className={`${styles.navbar} ${
+        navbarVisible ? styles.visible : styles.hidden
+      }`}
+    >
       {/* Logo */}
       <div className={styles.logo} onClick={() => handleNavClick("home")}>
         <img src="./images/LOCnavLogo.png" alt="Logo" />
@@ -67,7 +71,7 @@ const Navbar = () => {
 
       {/* Hamburger Menu */}
       <div
-        className={styles.hamburger}
+        className={`${styles.hamburger} ${!menuOpen ? styles.blink : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
         aria-expanded={menuOpen}
       >
@@ -80,19 +84,26 @@ const Navbar = () => {
       <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
         {[
           { label: "Home", id: "home" },
+          { label: "News", id: "news" },
           { label: "Meet the Perrins", id: "meetPerrins" },
           { label: "Our Mission", id: "mission" },
           { label: "Our Services", id: "services" },
           { label: "Location", id: "location" },
           { label: "Name and Logo Story", id: "about" },
-          { label: "Tithe", id: "donations" }, // Added Donations here
+          { label: "Tithe", id: "donations" },
           { label: "Contact Us", id: "contact" },
         ].map(({ label, id }, index) => (
           <li
             key={index}
+            className={id === "news" ? styles.fireGlow : ""}
             onClick={(e) => {
-              e.preventDefault(); // Prevent default behavior
-              handleNavClick(id);
+              e.preventDefault();
+              if (id === "news") {
+                onOpenNews(); // modal open
+              } else {
+                handleNavClick(id);
+              }
+              setMenuOpen(false);
             }}
           >
             {label}
