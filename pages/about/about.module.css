@@ -87,7 +87,7 @@
   }
 
   .parallelogramContent {
-    font-size: xx-small; /* Smaller font size for mobile */
+    font-size: small; /* Smaller font size for mobile */
     padding: 10px; /* Adjust padding for smaller screens */
   }
 }
